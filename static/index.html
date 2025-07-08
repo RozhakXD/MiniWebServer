@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python Web Server Experiment</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Python Web Server Experiment</h1>
+                <p class="subtitle">Implementasi pembelajaran socket programming dan HTTP server menggunakan Python</p>
+                <span class="badge">Proyek Pembelajaran Mandiri</span>
+            </div>
+        </header>
+        <div class="container">
+            <section>
+                <h2>Tentang Proyek Ini</h2>
+                <p>Ini adalah eksperimen pembangunan web server dari dasar menggunakan Python dan modul <code>socket</code>. Proyek ini dibuat untuk memahami fundamental jaringan komputer, protokol HTTP, dan cara kerja web server secara mendalam. </p>
+                <p>Dikembangkan dengan pendekatan modular untuk mempelajari best practices dalam arsitektur perangkat lunak, dengan komponen terpisah untuk request handling, response building, dan connection management.</p>
+                <div class="tech-stack">
+                    <span class="tech-item">Python 3</span>
+                    <span class="tech-item">Socket Programming</span>
+                    <span class="tech-item">Multithreading</span>
+                    <span class="tech-item">HTTP/1.1</span>
+                    <span class="tech-item">Modular Design</span>
+                </div>
+            </section>
+            <section>
+                <h2>Fitur Utama Server</h2>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <div class="feature-title">Multithreading Architecture</div>
+                        <p class="feature-desc">Mampu menangani beberapa koneksi klien secara simultan dengan implementasi threading yang efisien. Setiap koneksi ditangani oleh thread terpisah untuk memastikan responsivitas server.</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">Advanced HTTP Request Parsing</div>
+                        <p class="feature-desc">Mem-parsing request HTTP dengan robust menggunakan RequestParser yang terpisah, mendukung metode GET dan headers. Dilengkapi dengan penanganan error yang baik untuk request yang tidak valid.</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">Dynamic Response Handling</div>
+                        <p class="feature-desc">Membangun response HTTP yang valid dengan ResponseBuilder, termasuk status code 200, 404, dan 500. Mendukung Content-Type yang sesuai dengan file yang diminta.</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">Static File Serving</div>
+                        <p class="feature-desc">Menyajikan file statis (HTML, CSS, gambar) dari direktori khusus dengan penanganan MIME types dasar. Dilengkapi dengan cache control untuk performa yang lebih baik.</p>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">Modular Design</div>
+                        <p class="feature-desc">Struktur kode terorganisir dengan baik memisahkan concerns ke dalam modul terpisah untuk kemudahan pengembangan. Setiap komponen memiliki tanggung jawab yang jelas dan terisolasi.</p>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <p>© 2025 - Python Learning Project | Dibangun untuk memahami fundamental jaringan komputer</p>
+            </footer>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
